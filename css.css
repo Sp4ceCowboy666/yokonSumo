@@ -1,0 +1,206 @@
+/*fonts*/
+@font-face {
+    font-family: montserrat;
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/*animaciones*/
+@keyframes floating{
+    from{padding-top: max(5%,20px);}
+    to{padding-top: 4%;}
+}
+@keyframes revealBackground {
+    0% {
+      background-image: none; /* Start with no background image */
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    33.33% {
+      background-image: url('image1.jpg'); /* Reveal first background image */
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    66.66% {
+      background-image: url('image2.jpg'); /* Reveal second background image */
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100% {
+      background-image: url('image3.jpg'); /* Reveal third background image */
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+/*body*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+.header{
+    font-family: montserrat;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 2%;
+    position: relative;
+    display: flex;
+    align-items: end;
+    align-content: end;
+    text-align: left;
+    justify-content: end;
+}
+.header>a{
+    display: block;
+    width: min(200px,20%);
+    text-align: center;
+    text-decoration: none;
+}
+.header>a:visited{
+    color: black;
+    text-decoration: none;
+}
+.headerIcons{
+    padding-right: 5%;
+    padding-top: 2%;
+    position: relative;
+    display: flex;
+    align-items: end;
+    align-content: end;
+    text-align: left;
+    justify-content: end;
+}
+.headerIcons>a{
+    margin-left: min(5%,20px);
+    display: block;
+    width: min(50px,20%);
+    text-align: center;
+}
+.headerIcons>a>img{
+    width: max(50px,20%);
+}
+.menulinks{
+    text-decoration: underline;
+}
+.sec1{
+    height: 100vh;
+    width: 100%;
+    background: url(Assets/img/BANNER/LOGARDIUM\ LEVIOSA.png) 5% 5% ,
+    url(Assets/img/BANNER/BARRA\ VIOLETA.png) -35% ,
+    url(Assets/img/BANNER/BORDE\ SUPERIOR\ VERDE.png) top,
+    url(Assets/img/BANNER/FOTO\ 1.png) center,
+    url(Assets/img/BANNER/FONDO.png) center;
+    background-size: auto,contain,contain,cover,cover;
+    background-repeat: no-repeat;
+    font-family:montserrat;
+}
+.slider{
+    width: 100%;
+    height: 50vh;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: right;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+.s1{
+    animation: floating 1.5s linear infinite alternate;
+    padding-left: 2.5%;
+    width: min(60%,1400px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.diseno{
+    position: relative;
+}
+.s1>img{
+    width: 100%;
+}
+.letras-diseno{
+    position: relative;
+    align-content: flex-end;
+}
+.sec2{
+    min-height: max-content;
+    height: min(135vh, 80vw);
+    width: 100%;
+    background: url(Assets/img/somosespecialistas/fondo\ somos\ especialistas.png);
+    background-size: cover;
+    overflow: hidden;
+}
+.sec2div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10px;
+    background-color: #e7e4e4;
+    height: 24vw;
+    border-radius: 50px;
+    border: solid #ffff 5px;
+}
+.box>img{
+    height: fit-content;
+    margin-top: 2%;
+    width: 80%;
+}
+#uniqueImg{
+
+}
+.box>a{
+    margin-top: 2%;
+    width: 25%;
+}
+.sec3{
+    padding-top: 100px;
+    height: min(100vh,50vw);
+    background:  url(Assets/img/eleginos\ pa/objeto.png) right bottom, url(Assets/img/eleginos\ pa/fondoelegirnos.png);
+    background-repeat:no-repeat;
+    background-size: 40%,auto;
+    color: white;
+}
+hr.solid{
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin-left: 0;
+    align-items: start;
+}
+.sec3>h1{
+    margin:0px;
+    font-size: min(4rem,4vw);
+}
+.sec3>ul{
+    margin-top: 2%;
+}
+.sec3>ul>li{
+    margin-left: 2%;
+    font-size: min(4rem,4vw);
+}
+.futer{
+    height: min(50vh,500px);
+    display: flex;
+    justify-content: center;
+    background: url(Assets/img/pie/fondo.png);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.futerDiv{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min(80%,1400px);
+}
+.futerDiv>img{
+    margin: 10px auto;
+    height: max-content;
+    max-height: 20%;
+    width:100%;
+    width:  max-content;
+    max-width: 100vh;
+}

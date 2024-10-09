@@ -1,0 +1,63 @@
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url(../imgs/fondo2.webp);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: max(100vh,100vw);
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.288);
+    height: min(50px,5vw);
+    width: 100%;
+}
+.navbar a{
+    color: red;
+    font-weight: bold;
+}
+.menuthing{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.animegirls{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 20%;
+}
+.animegirls img{
+    position: relative;
+    width: 100%;
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: max(20vh,200px);
+}
+#logoimg{
+    width:min(100%,700px);
+    height:min(200%,60vw);
+}
+#spoty{
+    width: min(700px,95%);
+}
+.center1item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.division{
+    height: min(5vh,20px);
+}
